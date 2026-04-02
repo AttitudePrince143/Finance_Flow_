@@ -1,16 +1,59 @@
-# React + Vite
+# 💰 Finance Dashboard UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and responsive finance dashboard built using React to track transactions, analyze spending, and visualize financial data.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
+https://finance-dashboard-weld-zeta.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📂 GitHub Repository
+https://github.com/AttitudePrince143/finance_dashboard
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 📊 Dashboard overview (Balance, Income, Expenses)
+- 📈 Balance trend chart (time-based visualization)
+- 🧾 Transactions table with:
+  - Filter (All / Income / Expense)
+  - Search by category
+  - Sort (Date / Amount)
+- 🔐 Role-based UI:
+  - Viewer → view only
+  - Admin → add & delete transactions
+- ➕ Add Transaction:
+  - Predefined categories
+  - Custom category ("Other" option)
+- 📊 Spending breakdown chart (category-based)
+- 💡 Insights:
+  - Highest spending category
+- 💾 Data persistence using localStorage
+- 📱 Fully responsive design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- React (Vite)
+- Tailwind CSS
+- Recharts (for charts)
+
+---
+
+## 🧠 Approach
+
+- Used component-based architecture for scalability
+- Managed state using React hooks (useState, useEffect)
+- Implemented dynamic filtering, sorting, and searching
+- Designed role-based UI behavior without backend (simulated RBAC)
+- Used localStorage for persistence to mimic real-world behavior
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+git clone https://github.com/AttitudePrince143/finance_dashboard.git
+cd finance_dashboard
+npm install
+npm run dev
